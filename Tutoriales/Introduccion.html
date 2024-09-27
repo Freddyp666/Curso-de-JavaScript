@@ -1,1 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>getElementId</title>
+    <script src="Introduccion.js">   </script>
+</head>
+<body>
 
+    <p id="textoColor">Texto en color dando clic</p>
+    <button onclick="changeColor('green');">Color Verde</button>
+    <button onclick="changeColor('blue');">Color Azul</button>
+    <h1 id="textoFoco">Este un es foco</h1>
+    <br>
+
+    <button onclick="document.getElementById('imagen1').src='./img/on.webp'">Prender</button>
+
+    <img id="imagen1" src="./img/of.png" style="width: 100px;">
+
+    <button onclick="document.getElementById('imagen1').src='./img/of.png'">Apagar</button>
+</body>
+</html>
