@@ -35,3 +35,15 @@ function resta(){
     const resultado=x-y;
     mostrarResultado(resultado);
 }
+
+function multiplicacion(){
+    const {x,y}=obtenerValores();
+    const resultado=x*y;
+    mostrarResultado(resultado);
+}
+
+function division(){
+    const {x,y}=obtenerValores();
+    const resultado=x/y;
+    mostrarResultado(resultado);
+}
