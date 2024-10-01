@@ -14,7 +14,24 @@ function funcionDeAlerta(){
     window.alert("Este es un mensaje alerta")
 }
 
-function suma(x,y){
-    let x, y
-    return x+y
+function obtenerValores() {
+    let x = parseFloat(document.getElementById('n1').value);
+    let y = parseFloat(document.getElementById('n2').value);
+    return { x, y };
+}
+
+function mostrarResultado(resultado) {
+    document.getElementById('resultado').innerText = `Resultado: ${resultado}`;
+}
+
+function suma() {
+    const { x, y } = obtenerValores();
+    const resultado = x + y;
+    mostrarResultado(resultado);
+}
+
+function resta(){
+    const {x,y}=obtenerValores();
+    const resultado=x-y;
+    mostrarResultado(resultado);
 }
