@@ -67,5 +67,5 @@ function variables(){
     //agregar utiliza el push
     operaciones.push("modulo")
 
-    document.getElementById("operacion")
+    document.getElementById("operacion").innerHTML=operaciones;
 }
