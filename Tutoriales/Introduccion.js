@@ -57,3 +57,15 @@ function division(){
     const resultado=x/y;
     mostrarResultado(resultado);
 }
+
+function variables(){
+    const operaciones =["suma", "division", "resta"]
+    
+    //Agregar valor constante 
+    operaciones [0]= "multiplicacion"
+    
+    //agregar utiliza el push
+    operaciones.push("modulo")
+
+    document.getElementById("operacion")
+}
