@@ -58,7 +58,7 @@ function division(){
     mostrarResultado(resultado);
 }
 
-function variables( operaciones){
+function variables(){
     const operaciones =["suma", "division", "resta"]
     
     //Agregar valor constante 
@@ -67,5 +67,8 @@ function variables( operaciones){
     //agregar utiliza el push
     operaciones.push("modulo")
 
-    document.getElementById("operacion").innerHTML=operaciones;
-}
+    document.getElementById('demoOperacion').innerHTML=operaciones.join(",");
+    console.log(operaciones)
+} 
+
+document.addEventListener("DOMContentLoade", variables);
