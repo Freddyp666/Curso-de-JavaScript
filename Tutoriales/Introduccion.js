@@ -67,8 +67,15 @@ function variables(){
     //agregar utiliza el push
     operaciones.push("modulo")
 
-    document.getElementById('demoOperacion').innerHTML=operaciones.join(",");
+    document.getElementById('demoOperacion').innerHTML=operaciones
     console.log(operaciones)
 } 
 
 document.addEventListener("DOMContentLoade", variables);
+
+function myFunction(p1, p2) {
+    return p1 * p2;
+  }
+  
+  let result = myFunction(4, 3);
+  document.getElementById("idFuncion").innerHTML = result;
