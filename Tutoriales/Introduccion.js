@@ -73,9 +73,28 @@ function variables(){
 
 document.addEventListener("DOMContentLoade", variables);
 
+//Funcion suma
 function myFunction(p1, p2) {
     return p1 * p2;
   }
   
   let result = myFunction(4, 3);
   document.getElementById("idFuncion").innerHTML = result;
+
+  function suma(x,y){
+    return x+y
+  }
+
+  let resulSuma=suma(5,5);
+  document.getElementById('idSuma').innerHTML=resulSuma;
+
+  //Variable del objeto
+  const objetoCelular={
+    type:"Movil",
+    color:"Negro",
+    anio:"2019",
+    sistemaOperativo:"Android",
+    version:"12",
+    ram:"8",
+    almacenamiento:"128gb"
+  };
