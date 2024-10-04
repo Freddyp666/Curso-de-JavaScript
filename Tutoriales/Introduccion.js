@@ -98,3 +98,8 @@ function myFunction(p1, p2) {
     ram:"8",
     almacenamiento:"128gb"
   };
+
+  document.getElementById("objTel").innerHTML="Este telefno es tipo "+objetoCelular.type
+  +" de color "+objetoCelular.color+" con otras caracterisitcas: "+objetoCelular.sistemaOperativo;
+  document.getElementById("objTel2").innerHTML=Object.values(objetoCelular)
+  console.log(Object.values(objetoCelular))
