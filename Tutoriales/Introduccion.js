@@ -103,3 +103,17 @@ function myFunction(p1, p2) {
   +" de color "+objetoCelular.color+" con otras caracterisitcas: "+objetoCelular.sistemaOperativo;
   document.getElementById("objTel2").innerHTML=Object.values(objetoCelular)
   console.log(Object.values(objetoCelular))
+
+  //Varibale objeto con funcion
+  const objetoCel2={
+    type:"Movil",
+    color:"Negro",
+    anio:"2019",
+    fulltexto: function (){
+        return "Telefono tipo "+this.type+" de color "+this.color+" que salió "+ this.anio
+    }
+  }
+
+  document.getElementById("objTel3").innerHTML=objetoCel2.fulltexto()
+
+  
