@@ -116,4 +116,8 @@ function myFunction(p1, p2) {
 
   document.getElementById("objTel3").innerHTML=objetoCel2.fulltexto()
 
-  
+  //Variables de visualizacion
+  const objVisual={
+    type: "Portatil",
+    color:""
+  }
