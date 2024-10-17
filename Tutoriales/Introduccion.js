@@ -116,8 +116,32 @@ function myFunction(p1, p2) {
 
   document.getElementById("objTel3").innerHTML=objetoCel2.fulltexto()
 
-  //Variables de visualizacion
-  const objVisual={
+  //Variables de Objeto visualizacion
+  const lapto={
     type: "Portatil",
-    color:""
+    color:"negro",
+    ram:"16gb",
+    procesador:"i7",
+    marca:"Lenovo",
+    precio: 1000
   }
+
+  document.getElementById("objVis1").innerHTML=lapto.marca+lapto.precio+lapto.color
+
+  //Mostrar objeto en bucle
+    let texto=""
+    for (let x in lapto) {
+    texto += lapto[x] + " ";
+    };
+    document.getElementById("objVis2").innerHTML=texto
+
+    //Mostrar el objeto usando Object.values()
+    const myArray=Object.values(lapto)
+    document.getElementById("objVis3").innerHTML=myArray
+    
+    //Mostrar objeto tipo json
+    document.getElementById("objVis4").innerHTML=JSON.stringify(lapto)
+    console.log(lapto)
+
+    //Variables para el constructor
+    
