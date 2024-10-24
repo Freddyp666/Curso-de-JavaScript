@@ -144,4 +144,15 @@ function myFunction(p1, p2) {
     console.log(lapto)
 
     //Variables para el constructor
+    function Telefono(marca, anio, color, almacenamiento){
+        this.nombreMarca=marca,
+        this.telAnio=anio,
+        this.telColor=color,
+        this.telAlmacenamiento=almacenamiento
+    }
+
+    //Objeto credado
+    const myTelefono= new Telefono("<b>Samsung 23</b>", 2023, "<b>Blanco</b>","256gb")
     
+    //Mostrar datos del telefono
+    document.getElementById("objConst1").innerHTML="La marca del tefelono es "+myTelefono.nombreMarca+ " de color "+myTelefono.telColor;
