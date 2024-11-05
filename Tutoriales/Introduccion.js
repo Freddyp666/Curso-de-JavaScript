@@ -163,7 +163,19 @@ function myFunction(p1, p2) {
         this.gama=gama,
         this.anio=anio,
         this.color=color,
+        this.ram=ram
         this.fullTelefono= function (){
-            return this.nombreMarca +" "+ this.gama
+            return this.nombreMarca +" de gama "+ this.gama
         }
     }
+
+    //Mostrar objeto 
+    const myTelefono1=new Telefono2( "<b>Redmi</b> ","Alta", 2024, "Black","8gb")
+    document.getElementById("objConst2").innerHTML="Tiene la siguientes caraterisicas " +myTelefono1.fullTelefono();
+
+    //-------------------------------Eventos---------------------------------------------
+    //Mostrar fecha con un funcion
+    function mostrarFecha(){
+        document.getElementById("fecha").innerHTML=Date();
+    }
+
