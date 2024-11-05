@@ -156,3 +156,14 @@ function myFunction(p1, p2) {
     
     //Mostrar datos del telefono
     document.getElementById("objConst1").innerHTML="La marca del tefelono es "+myTelefono.nombreMarca+ " de color "+myTelefono.telColor;
+
+    //Constructor con un metodo dentro
+    function Telefono2(marca,gama, anio, color, ram){
+        this.nombreMarca=marca,
+        this.gama=gama,
+        this.anio=anio,
+        this.color=color,
+        this.fullTelefono= function (){
+            return this.nombreMarca +" "+ this.gama
+        }
+    }
