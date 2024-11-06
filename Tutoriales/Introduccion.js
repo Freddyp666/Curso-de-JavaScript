@@ -192,4 +192,21 @@ function myFunction(p1, p2) {
     //Metodo que extrae un parte del texto de una cadena de texto
     document.getElementById("idString3").innerHTML=txt.slice(4,9)
 
+    //Funcion para convertir el texto en mayuscula
+    function textoMayuscula(){
+        let text=document.getElementById("idString4").innerHTML
+        document.getElementById("idString4").innerHTML=text.toUpperCase();
+    }
+ 
+    //Funcion para quitar espcio vacios
+    function textoVacio(){
+        let text = "                     Hola mundo"
+        let textoSinEspacios=text.trim()
+        document.getElementById("idString5").innerHTML="Texto 1: "+text.length+ ", "+"Texto 2: "+textoSinEspacios.length; 
+    }
 
+    //Funcion Para remplazar Texto
+    function txtRemplazar(){
+        let text=document.getElementById("idString6").innerHTML;
+        document.getElementById("idString6").innerHTML=text.replace(/Mundo/i,"Freddy")
+    }
