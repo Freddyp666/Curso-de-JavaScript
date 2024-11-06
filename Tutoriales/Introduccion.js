@@ -174,8 +174,22 @@ function myFunction(p1, p2) {
     document.getElementById("objConst2").innerHTML="Tiene la siguientes caraterisicas " +myTelefono1.fullTelefono();
 
     //-------------------------------Eventos---------------------------------------------
-    //Mostrar fecha con un funcion
+    //Mostrar fecha con un funcion date()
     function mostrarFecha(){
         document.getElementById("fecha").innerHTML=Date();
     }
+
+    //-------------------------------String----------------------------------------------
+    let txt="Hola como estas"
+    document.getElementById("idString").innerHTML=txt.length
+    
+    //Metodo charAt(), para extraer uh caracter
+    document.getElementById("idString1").innerHTML=txt.charAt(3)
+
+    //Metodo charCodeAt(), para extraer el codigo ascii del caracter
+    document.getElementById("idString2").innerHTML=txt.charCodeAt(5);
+
+    //Metodo que extrae un parte del texto de una cadena de texto
+    document.getElementById("idString3").innerHTML=txt.slice(4,9)
+
 
