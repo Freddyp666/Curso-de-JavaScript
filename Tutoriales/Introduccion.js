@@ -210,3 +210,17 @@ function myFunction(p1, p2) {
         let text=document.getElementById("idString6").innerHTML;
         document.getElementById("idString6").innerHTML=text.replace(/Mundo/i,"Freddy")
     }
+
+    //Funcion para replazar palabra iguales en un texto
+    function txtRemplazarTodo(){
+        let text=document.getElementById("idString7").innerHTML;
+        text=text.replaceAll("perros", "gatos")
+        document.getElementById("idString7").innerHTML=text;
+    }
+
+
+    //---------------------------Metdos de Busqueda---------------------------------------
+    //Metodo de busqueda indexOf()
+    let textoP="Android 14 es la decimocuarta versión principal y la vigésima primera de Android, el sistema operativo movil desarrollado por Open Handset Alliance liderada por la empresa Google"
+    let busqueda=textoP.indexOf("versión");
+    document.getElementById("idBusqueda").innerHTML="Texto buscado en la posicion: "+busqueda;
